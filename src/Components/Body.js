@@ -1,7 +1,7 @@
 import Intro from "./BodyComponents/Intro"
 import AboutMe from "./BodyComponents/AboutMe"
 import Education from "./BodyComponents/Education"
-import Experience from "./BodyComponents/Experience"
+// import Experience from "./BodyComponents/Experience"
 import Cp from "./BodyComponents/Cp"
 import Projects from "./BodyComponents/Projects/Projects"
 import Achievements from "./BodyComponents/Achievements"

@@ -39,8 +39,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4"
-  }
+  },
+  "description": "My-Website",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
