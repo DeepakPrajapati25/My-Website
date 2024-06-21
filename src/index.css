@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root .dark {
+    --color-slate: rgb(15 23 42 / 1);
+    --bg-app: var(--color-slate);
+    --bg-nav: rgb(0, 0, 0);
+    --bg-nav-dropdown: rgb(56, 56, 56);
+    --text-base: #B9B9B9;
+    --text-color-hover: rgb(254 249 195 / 1);
+    --arrow-bg: rgb(0, 0, 0);
+    --arrow-color: white;
+    --arrow-color-initial: transparent;
+    --toggle-bg: rgb(52, 52, 52);
+    --toggle-icon-color: var(--text-color-hover);
+    --rotating-plus: rgb(234 179 8 / 1);
+}
+
+:root .light {
+    --color-slate: rgb(255, 255, 255);
+    --bg-app: var(--color-slate);
+    --bg-nav: rgb(198, 204, 254);
+    --bg-nav-dropdown: rgb(191, 198, 251);
+    --text-base: rgb(36, 20, 42);
+    --text-color-hover: rgb(29, 83, 184);
+    --arrow-bg: var(--bg-nav);
+    --arrow-color: rgb(69, 69, 69);
+    --arrow-color-initial: transparent;
+    --toggle-bg: rgb(99, 100, 100);
+    --toggle-icon-color: rgb(0, 0, 0);
+    --rotating-plus: rgb(86, 14, 255);
+}
+
+.dropdown-inpage-enter {
+    padding: 0px;
+    padding-left: 24px;
+    transform: translateY(-100%);
+}
+
+.dropdown-inpage-enter-active {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    transform: translateY(0%);
+    transition: all 0.3s linear;
+}
+
+.dropdown-inpage-enter-done {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    transform: translateY(0%);
+}
+
+.dropdown-inpage-exit {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    transform: translateY(0%);
+}
+
+.dropdown-inpage-exit-active {
+    padding: 0px;
+    padding-left: 24px;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+}
+
+
+.up-arrow-enter {
+    right: 32px;
+    bottom: 0px;
+    color: var(--arrow-color-initial);
+    background-color: transparent;
+}
+
+.up-arrow-enter-active {
+    right: 32px;
+    bottom: 32px;
+    color: var(--arrow-color);
+    background-color: var(--arrow-bg);
+    transition: all 0.4s linear;
+}
+
+.up-arrow-enter-done {
+    right: 32px;
+    bottom: 32px;
+    color: var(--arrow-color);
+    background-color: var(--arrow-bg);
+}
+
+.up-arrow-exit {
+    right: 32px;
+    bottom: 32px;
+    color: var(--arrow-color);
+    background-color: var(--arrow-bg);
+}
+
+.up-arrow-exit-active {
+    right: 32px;
+    bottom: 0px;
+    color: var(--arrow-color-initial);
+    background-color: transparent;
+    transition: all 0.4s linear;
+}
+
+@media screen and (max-width: 1000px) {
+    .up-arrow-enter {
+        right: 32px;
+        bottom: 0px;
+        color: var(--arrow-color-initial);
+        background-color: transparent;
+    }
+
+    .up-arrow-enter-active {
+        right: 32px;
+        bottom: 32px;
+        color: var(--arrow-color);
+        background-color: var(--arrow-bg);
+        transition: all 0.4s linear;
+    }
+
+    .up-arrow-enter-done {
+        right: 32px;
+        bottom: 32px;
+        color: var(--arrow-color);
+        background-color: var(--arrow-bg);
+    }
+
+    .up-arrow-exit {
+        right: 32px;
+        bottom: 32px;
+        color: var(--arrow-color);
+        background-color: var(--arrow-bg);
+    }
+
+    .up-arrow-exit-active {
+        right: 32px;
+        bottom: 0px;
+        color: var(--arrow-color-initial);
+        background-color: transparent;
+        transition: all 0.4s linear;
+    }
 }
