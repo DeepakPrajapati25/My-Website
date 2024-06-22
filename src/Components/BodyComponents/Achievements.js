@@ -24,7 +24,7 @@ export default function Achievements(props) {
     },
     {
       title: "Atcoder",
-      body: "Green(Rating 975) on Atcoder.",
+      body: "Green(Rating 1019) on Atcoder.",
     },
     {
       title: "codeforces",
