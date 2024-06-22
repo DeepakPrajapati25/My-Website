@@ -40,7 +40,7 @@ export default function Achievements(props) {
     },
     {
       title: "AlgoUniversity Graph Contest 2024",
-      body: " Secured rank 11 among 1.5k+ participants | 3th in IITG.",
+      body: " Secured rank 11 among 1.5k+ participants | 3rd in IITG.",
     },
   ];
 
