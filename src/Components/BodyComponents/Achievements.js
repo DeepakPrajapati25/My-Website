@@ -20,7 +20,7 @@ export default function Achievements(props) {
     },
     {
       title: "codeChef",
-      body: "Max rating of 1935(4-star) on CodeChef.",
+      body: "Max rating of 2012(5-star) on CodeChef.",
     },
     {
       title: "Atcoder",
@@ -32,7 +32,7 @@ export default function Achievements(props) {
     },
     {
       title: "codechef",
-      body: " Secured Global Rank 200(in Div-2) among 23500+ participants in Starter 112.",
+      body: " Secured Global Rank 67(in Div-2) among 23500+ participants in Starter 142.",
     },
     {
       title: "Meta Hacker Cup 2023",
