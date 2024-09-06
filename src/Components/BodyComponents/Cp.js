@@ -6,7 +6,7 @@ export default function Cp(props) {
         <div ref={props.cpRef} className="flex flex-col gap-10 pb-8 sm:pb-16 md:pb-24 lg:pb-32">
             <Title>competitiveProgamming</Title>
             <div>
-                I give competitive programming contests in my free time. I'm an <span className="text-color-hover">Expert</span> on Codeforces, <span className="text-color-hover">4 star rated coder</span> on CodeChef and <span className="text-color-hover">Green</span> on Atcoder.
+                I give competitive programming contests in my free time. I'm an <span className="text-color-hover">Expert</span> on Codeforces, <span className="text-color-hover">5 star rated coder</span> on CodeChef and <span className="text-color-hover">Green</span> on Atcoder.
             </div>
             <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-start  gap-4 leading-8">
                 <div className="align-baseline">My Handles:</div>
